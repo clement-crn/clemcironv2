@@ -1,0 +1,18 @@
+Le ROUTER v6
+
+-Index : laisser vide
+-App.js : regroupe tous les routes possibles
+SURTOUT laisser la navbar au dessus des routes, pour la laisser toujours visible
+On fera de meme pour le footer, qui devra donc se positionner tout en dessous
+
+
+remarque : il faudra changer le dossier d' Home.tsx, porte a confusion
+
+
+
+
+suspect :
+.home-container {
+    background-color: red;
+    height: 100vh;
+}

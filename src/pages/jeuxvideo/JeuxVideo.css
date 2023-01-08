@@ -1,0 +1,30 @@
+.jv-home-container {
+    height: 100vh;
+    top: 0px;
+    font-family: "Roboto";
+
+    display: flex;
+    justify-content: center;
+}
+
+#nous-contacter a {
+    text-decoration: none;
+    color: white;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#nous-contacter {
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#nous-contacter:hover {
+    transition: 0.3s;
+    background-color: #fab700;
+}
+
+@media (max-width: 900px) {
+}

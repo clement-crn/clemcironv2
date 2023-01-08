@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap");
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0px;
+    font-family: "segoe ui";
+}
+
+.nav {
+    height: 90px;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    margin-left: 2vw;
+    align-items: center;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #171717;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: rgba(255, 255, 255, 0.129);
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+#cironstudiologo {
+    height: 80px;
+}
+
+@media (max-width: 740px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid rgb(0, 0, 0);
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgb(241, 241, 241);
+
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        left: 0px;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(40vh - 50px);
+        overflow-y: auto;
+    }
+    .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+    }
+}

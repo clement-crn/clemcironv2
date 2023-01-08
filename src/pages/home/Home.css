@@ -1,0 +1,148 @@
+.home-container {
+    height: 100vh;
+    font-family: "Roboto";
+    background-color: #131417;
+}
+
+#nous-contacter a {
+    text-decoration: none;
+    color: white;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#nous-contacter {
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#nous-contacter:hover {
+    transition: 0.3s;
+    background-color: #fab700;
+}
+
+.t1-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 3vh;
+
+    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.text-container1 {
+    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+}
+
+.home-section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section:nth-child(1) {
+    color: #000000;
+    background: #000000;
+}
+.home-section:nth-child(2) {
+    color: #000000;
+
+    background-image: url(../../img/archi.jpg);
+    background-position: 50% 80%;
+}
+.home-section:nth-child(3) {
+    color: #000000;
+}
+.home-section:nth-child(4) {
+    color: #000000;
+    background: #ffffff;
+}
+.home-section .container {
+    margin: 100px;
+}
+.home-section h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+.home-section h2 {
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.home-section h3 {
+    font-size: 20px;
+}
+
+.h2-sec1 {
+    color: white;
+}
+.h3-sec1 {
+    color: white;
+}
+.p-sec1 {
+    color: white;
+}
+
+.home-section .text-container {
+    display: flex;
+}
+.home-section .text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+}
+.home-section .text-container .text-box h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+h2 {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .home-section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home-section .text-container {
+        flex-direction: column;
+    }
+
+    .home-section .text-container .text-box h3 {
+        font-size: 20px;
+    }
+
+    .h3-sec2 {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+}
+#nous-contacter {
+    font-size: 2vh;
+}

@@ -1,0 +1,50 @@
+.sites-b1-lines-title {
+}
+
+.sites-container {
+    height: 100vh;
+    display: flex;
+
+    top: zero;
+    justify-content: center;
+}
+
+.sites-b1 {
+    width: 300px;
+    height: 60vh;
+    margin-top: 2vh;
+}
+
+.sites-b1-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sites-b1-lines-1 {
+    display: flex;
+    background-color: rgba(246, 246, 246, 0.447);
+    gap: 20px;
+    align-items: center;
+}
+#nous-contacter-sitesweb a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#nous-contacter-sitesweb {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+#nous-contacter-sitesweb:hover {
+    transition: 0.3s;
+    background-color: #fab700;
+}

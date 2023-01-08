@@ -1,0 +1,48 @@
+.project-container {
+    height: 70vh;
+    margin-top: 100px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 0px;
+}
+
+.project-upperside {
+    background-color: rgba(0, 255, 255, 0.388);
+    height: 50vh;
+    background-image: url("../../img/jeuxvideo/car.jpeg");
+    background-position: 0% 30%;
+}
+.project-upperside h1 {
+    font-family: Roboto;
+    color: white;
+    font-size: 10vh;
+    margin: 40px;
+}
+.project-downside {
+    background-color: rgba(231, 231, 231, 0.388);
+    height: 1100px;
+    gap: 40px;
+}
+
+.project-downside h2 {
+    margin: 40px;
+    font-family: Roboto;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.project-downside-text {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+    .project-upperside h1 {
+        font-family: Roboto;
+        color: white;
+        font-size: 5vh;
+        margin: 40px;
+    }
+}
