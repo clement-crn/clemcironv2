@@ -62,7 +62,7 @@ function Sitesweb() {
           
         
         </div>
-        <h2 id="nous-contacter-sitesweb"><Link  to="Contact"> Nous contacter</Link></h2>
+        <h2 id="nous-contacter-sitesweb"><Link  to="/Contact"> Nous contacter</Link></h2>
       </div>
     </div>
   )
