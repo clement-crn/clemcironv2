@@ -2,7 +2,7 @@ import React from 'react'
 import "./SitesWeb.css"
 import {ReactComponent as Pencil} from "../../img/sitesinternet/pencil.svg";
 import {ReactComponent as Person} from "../../img/sitesinternet/person.svg";
-import {ReactComponent as Screens} from "../../img/sitesinternet/screens.svg";
+import {ReactComponent as Prototype} from "../../img/sitesinternet/prototype.svg";
 import {ReactComponent as Seo} from "../../img/sitesinternet/seo.svg";
 import {ReactComponent as Cloud} from "../../img/sitesinternet/cloud.svg";
 import { Link } from "react-router-dom";
@@ -35,8 +35,8 @@ function Sitesweb() {
           </div>
 
           <div className='sites-b1-lines-1'>
-            <div className='sites-b1-lines-1-pair-logo'>
-              <Screens/>
+            <div className='sites-b1-lines-1-pair-logo-prototype'>
+              <Prototype/>
             </div>
             <div className='sites-b1-lines-1-pair-text'>
               Mise en place du prototype

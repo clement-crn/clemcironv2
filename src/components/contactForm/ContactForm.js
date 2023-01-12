@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import "./ContactForm.css";
+import { Divide } from "hamburger-react";
 
 const ContactUs = () => {
     const form = useRef();
@@ -9,9 +11,10 @@ const ContactUs = () => {
 
         emailjs
             .sendForm(
-                process.env.REACT_APP_SERVICE,
-                process.env.REACT_APP_TEMPLATE_ID,
-                process.env.REACT_APP_PUBLIC_KEY
+                "service_w33qoxg",
+                "template_bcfyxuw",
+                form.current,
+                "ADPLh12r98Rl3Gtgt"
             )
             .then(
                 (result) => {
@@ -24,15 +27,31 @@ const ContactUs = () => {
     };
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-        </form>
+        <div className="contact-component-container">
+            <form ref={form} onSubmit={sendEmail}>
+                <div>
+                    <label>Nom</label>
+                </div>
+                <div>
+                    <input type="text" name="user_name" />
+                </div>
+                <div>
+                    <label>Email</label>
+                </div>
+                <div>
+                    <input type="email" name="user_email" />
+                </div>
+                <div>
+                    <label>Message</label>
+                </div>
+                <div>
+                    <textarea name="message" />
+                </div>
+                <div>
+                    <input id="send" type="submit" value="Envoyer" />
+                </div>
+            </form>
+        </div>
     );
 };
 
