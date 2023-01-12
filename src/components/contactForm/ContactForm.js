@@ -2,9 +2,12 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 import { Divide } from "hamburger-react";
+import { useState } from "react";
 
 const ContactUs = () => {
     const form = useRef();
+    const [modal, setModal] = useState(false);
+    const user_name = "";
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -25,6 +28,16 @@ const ContactUs = () => {
                 }
             );
     };
+
+    const toggleModal = () => {
+        setModal(!modal);
+    };
+
+    if (modal) {
+        document.body.classList.add("active-modal");
+    } else {
+        document.body.classList.remove("active-modal");
+    }
 
     return (
         <div className="contact-component-container">
@@ -48,9 +61,25 @@ const ContactUs = () => {
                     <textarea name="message" />
                 </div>
                 <div>
-                    <input id="send" type="submit" value="Envoyer" />
+                    <input
+                        id="send"
+                        onClick={toggleModal}
+                        type="submit"
+                        value="Envoyer"
+                    />
                 </div>
             </form>
+            {modal && (
+                <div className="modal">
+                    <div onClick={toggleModal} className="overlay"></div>
+                    <div className="modal-content">
+                        <p>Votre message a bien été envoyé.</p>
+                        <button className="close-modal" onClick={toggleModal}>
+                            Fermer
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

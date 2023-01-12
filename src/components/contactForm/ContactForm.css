@@ -32,3 +32,45 @@
     text-shadow: none;
     font-weight: 700;
 }
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 30px;
+}
+
+.close-modal {
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 4px;
+    transform: translate(-50%, 0%);
+}
